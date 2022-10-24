@@ -1,0 +1,45 @@
+/*Selector universal y propiedad border-box para que las cajas crezcan hasta el borde*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* Para el primer parrafo, color de fuente #2d6921, borde de 3px dotted y color #d66f0f, anchura de 500px, fuente en negrita, relleno en los cuatro lados de 20px, texto alineado a la derecha y un margen inferior de 100px. */
+p{
+    width: 500px;
+    padding: 20px;
+    border: 3px dotted #d66f0f;
+    margin-bottom: 100px;
+    color: #2d6921;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Para el segundo parrafo, borde de 3px solido y color azul, anchura 500px, centrado automáticamente, relleno a los cuatro lados de 50px y la fuente en cursiva. */
+
+p + p {
+    border: 3px solid blue;
+    width: 500px;
+    padding: 50px;
+    font-family: cursive;
+    text-align: justify;
+}
+
+/* Para el tercer parrafo, anchura del 30%, borde de 6px outset y color #666, relleno a los cuatro lados de 10px, texto justificado y un interlineado de 30px */
+
+p + p + p {
+    width: 30%;
+    border: 6px outset #666;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Para el cuarto parrafo, anchura del 75%, borde superior de 3px solido y color #f0377b. */
+
+p + p + p + p {
+    width: 75%;
+    border: 0 solid #f0377b;
+    border-top-width: 3px;
+}
